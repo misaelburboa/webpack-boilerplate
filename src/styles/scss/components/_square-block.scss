@@ -1,0 +1,15 @@
+.square-block{
+    text-align: center;
+    margin: 0 auto;
+    border: solid blue 1px;
+    max-width: 600px;
+    height: 500px;
+    font-size: 2rem;
+}
+
+.square-block i{
+    font-size: 9rem;
+    @include breakpoint(medium){
+        font-size: 25rem;
+    }
+}
