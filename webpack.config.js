@@ -3,9 +3,9 @@ const webpack           = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = (env) => {
-    const isProduction = env === 'production';
-    const providePlugins = new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'});
-    const CSSExtract = new ExtractTextPlugin('styles.css');
+    const isProduction      = env === 'production';
+    const providePlugins    = new webpack.ProvidePlugin({$: 'jquery', jQuery: 'jquery'});
+    const CSSExtract        = new ExtractTextPlugin('styles.css');
 
     return {
         entry: ['./app.js', './src/styles/scss/app.scss'],
